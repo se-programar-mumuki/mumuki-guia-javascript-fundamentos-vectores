@@ -1,0 +1,1 @@
+var personas = ["mara", "julian"];

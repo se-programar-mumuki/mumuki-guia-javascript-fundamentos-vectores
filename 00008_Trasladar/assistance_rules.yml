@@ -1,0 +1,13 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - "* Not:DeclaresVariable"
+  then: no es necesario que declares ninguna variable, sólo definí `trasladar`
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    these_expectations_failed:
+    - "* DeclaresProcedure:trasladar"
+  then: en este ejercicio tenés que definir el procedimiento `trasladar`.  Recordá
+    que los procedimientos no retornan nada
